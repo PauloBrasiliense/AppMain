@@ -9,7 +9,10 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "serve:prod": "set MY_ENV=prod&& ionic-app-scripts serve",
+    "serve:dev": "set MY_ENV=dev&& ionic-app-scripts serve",
+    "serve:tst": "set MY_ENV=dev&& ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",
@@ -31,6 +34,9 @@
     "rxjs": "5.5.10",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
+  },
+  "config": {
+    "ionic_webpack": "./webpack.config.js"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.9",

@@ -1,0 +1,5 @@
+{
+  "pessoa": [
+    { "id": 1, "nome": "Paulo Brasiliense", "categoria": 5 }
+  ]
+}
