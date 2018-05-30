@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController, LoadingController, AlertController, NavParams } from 'ionic-angular';
-import { IPessoa } from '../../interfaces/iIPessoa';
-import { HttpErrorResponse } from '@angular/common/http';
-import { PessoaProvider } from '../../providers/pessoa/pessoa';
-import { NavLifecycles } from 'utils/ionic/nav/nav-lifecycles';
-import { IcadpessoaPage } from '../icadpessoa/icadpessoa';
-import { ListapessoasPage } from '../listapessoas/listapessoas';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
-
-
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-principal',
+  templateUrl: 'principal.html',
 })
-export class HomePage implements NavLifecycles {
-
+export class PrincipalPage {
 
   searchQuery: string = '';
   bairros: string[];
@@ -50,8 +43,8 @@ export class HomePage implements NavLifecycles {
     }
   }
 
-  Buscar() {
-    this.navCtrl.push(ListapessoasPage);
+  BuscarPessoas() {
+    this.navCtrl.push(HomePage);
   }
 
 }

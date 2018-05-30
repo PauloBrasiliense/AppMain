@@ -1,23 +1,36 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Estagiários disponíveis
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-
-  <ion-list>
-    <ion-item *ngFor="let pessoa of pessoas">
-      <h2>
-        {{pessoa.nome}} 
-      </h2>
-      <p>
-        {{pessoa.periodo}} 
+    <ion-list radio-group>
+        <ion-list-header>
+          Buscar por
+        </ion-list-header>
       
+        <ion-item>
+          <ion-label>Vaga</ion-label>
+          <ion-radio checked="true" value="vaga"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Estagiário</ion-label>
+          <ion-radio value="estagiario"></ion-radio>
+        </ion-item>
+      </ion-list>  
 
+  <ion-searchbar (ionInput)="getBairros($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let bairro of bairros">
+      {{ bairro }}
     </ion-item>
   </ion-list>
+
+  <button ion-button full (click)="Buscar()">Localizar</button>
+
 </ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lista de Pessoas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let pessoa of pessoas" (click)="SelecionarPessoa(pessoa)">
+      <h2>{{pessoa.nome}}</h2>
+      <p>{{pessoa.periodo}}</p>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="ListarVagas()">Candidatar todos a vaga</button>
+</ion-content>
