@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Perfil de {{pessoa.nome}}</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -10,16 +10,83 @@
 
 <ion-content padding>
 
+  <ion-item-group>
+    <ion-item-divider color="light">
+      <ion-icon name="contact"></ion-icon>
+      DADOS CADASTRAIS
+    </ion-item-divider>
+    <ion-item>Nome: {{pessoa.nome}}</ion-item>
+    <ion-item>Data Nascimento: 14/08/1981</ion-item>
+    <ion-item>E-mail: pj-dani@hotmail.com</ion-item>
+    <ion-item>Celular: 99946-1482</ion-item>
+  </ion-item-group>
 
+  <ion-item-group>
+    <ion-item-divider color="light">
+      <ion-icon name="thumbs-up"></ion-icon>
+      ATIVIDADES DE INTERESSE
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Musculação</ion-label>
+      <ion-radio item-left value="musculacao"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Atividade Coletiva</ion-label>
+      <ion-radio item-left checked="true" value="coletiva"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Running & Cardio</ion-label>
+      <ion-radio item-left value="running"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Spinning</ion-label>
+      <ion-radio item-left checked="true" value="spinning"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Parque Aquático</ion-label>
+      <ion-radio item-left checked="true" value="aquatico"></ion-radio>
+    </ion-item>
+
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        <ion-icon name="school"></ion-icon>
+        FORMAÇÃO
+      </ion-item-divider>
+      <ion-item>Universidade Estácio de Sá</ion-item>
+      <ion-item>7º Período</ion-item>
+      <ion-item>Conclusão: Dez./2018</ion-item>
+    </ion-item-group>
+
+    <ion-item-divider color="light">
+      <span item-right>
+
+        Recomendação: 4,8
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+
+      </span>
+    </ion-item-divider>
+
+
+  </ion-item-group>
 
 
 </ion-content>
 
 <ion-footer>
 
-    <ion-navbar>
+  <ion-navbar>
 
-        <button ion-button full >Candidatar a vaga</button> 
-    </ion-navbar>
-  
-  </ion-footer>
+    <button ion-button block>CANDIDATAR A VAGA</button>
+  </ion-navbar>
+
+</ion-footer>

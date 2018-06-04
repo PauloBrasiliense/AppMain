@@ -8,21 +8,21 @@
 
 <ion-content padding>
 
-    <ion-list radio-group>
-        <ion-list-header>
-          Buscar por
-        </ion-list-header>
-      
-        <ion-item>
-          <ion-label>Vaga</ion-label>
-          <ion-radio checked="true" value="vaga"></ion-radio>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label>Estagiário</ion-label>
-          <ion-radio value="estagiario"></ion-radio>
-        </ion-item>
-      </ion-list>  
+  <ion-list radio-group>
+    <ion-list-header>
+      Buscar por
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Vaga</ion-label>
+      <ion-radio checked="true" value="vaga"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Estagiário</ion-label>
+      <ion-radio value="estagiario"></ion-radio>
+    </ion-item>
+  </ion-list>
 
   <ion-searchbar (ionInput)="getBairros($event)"></ion-searchbar>
   <ion-list>

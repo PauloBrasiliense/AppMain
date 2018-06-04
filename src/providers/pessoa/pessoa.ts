@@ -13,7 +13,7 @@ export class PessoaProvider {
 
   lista(){
 
-    return this._http.get<IPessoa[]>('http://localhost:3000/pessoa/')
+    return  this._http.get<IPessoa[]>('http://localhost:3000/pessoa/')
   }
 
   get(id: number) {

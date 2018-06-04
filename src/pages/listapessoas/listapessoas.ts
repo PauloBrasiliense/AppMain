@@ -15,12 +15,19 @@ import { ListavagasPage } from '../listavagas/listavagas';
 })
 export class ListapessoasPage implements NavLifecycles {
 
-  public pessoas: IPessoa[];
+  public pessoas_: IPessoa[];
+  pessoas: string[];
 
   constructor(public navCtrl: NavController,
     private _loadingCtrl: LoadingController,
     private _alertCtrl: AlertController,
     private _PessoaService: PessoaProvider) {
+
+      this.pessoas = [
+        'Tijuca',
+        'Vila Isabel',
+        'Maracanã'
+      ];
   }
 
   ionViewDidLoad() {
@@ -38,7 +45,7 @@ export class ListapessoasPage implements NavLifecycles {
     this._PessoaService.lista()
       .subscribe(
         (pessoas) => {
-          this.pessoas = pessoas;
+          this.pessoas_ = pessoas;
 
           // Finaliza exibição da msg
           loading.dismiss();
@@ -65,12 +72,12 @@ export class ListapessoasPage implements NavLifecycles {
   SelecionarPessoa(pessoa: IPessoa) {
     console.log(pessoa);
 
-    this.navCtrl.push(PerfilpessoaPage,{ p: pessoa } );
+    this.navCtrl.push(PerfilpessoaPage.name,{ p: pessoa } );
   }
 
   ListarVagas() {
 
-    this.navCtrl.push(ListavagasPage);
+    this.navCtrl.push(ListavagasPage.name);
   }
 
   

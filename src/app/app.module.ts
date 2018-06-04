@@ -10,19 +10,14 @@ import { PessoaProvider } from '../providers/pessoa/pessoa';
 import { HttpClientModule } from '@angular/common/http';
 import { IcadpessoaPage } from '../pages/icadpessoa/icadpessoa';
 import { PrincipalPage } from '../pages/principal/principal';
-import { ListapessoasPage } from '../pages/listapessoas/listapessoas';
-import { ListavagasPage } from '../pages/listavagas/listavagas';
-import { PerfilpessoaPage } from '../pages/perfilpessoa/perfilpessoa';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     IcadpessoaPage,
-    PrincipalPage,
-    ListapessoasPage,
-    ListavagasPage,
-    PerfilpessoaPage
+    PrincipalPage
   ],
   imports: [
     BrowserModule,
@@ -34,10 +29,7 @@ import { PerfilpessoaPage } from '../pages/perfilpessoa/perfilpessoa';
     MyApp,
     HomePage,
     IcadpessoaPage,
-    PrincipalPage,
-    ListapessoasPage,
-    ListavagasPage,
-    PerfilpessoaPage
+    PrincipalPage
   ],
   providers: [
     StatusBar,

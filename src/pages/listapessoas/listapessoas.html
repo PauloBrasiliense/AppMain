@@ -2,17 +2,47 @@
 
   <ion-navbar>
     <ion-title>Lista de Pessoas</ion-title>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-item-divider color="light">
+    <span item-right>      
+      <ion-icon name="options"></ion-icon>
+    </span>
+
+    <span item-right>
+        <ion-icon name="reorder"></ion-icon>     
+    </span>
+
+  </ion-item-divider>
+
   <ion-list>
     <ion-item *ngFor="let pessoa of pessoas" (click)="SelecionarPessoa(pessoa)">
-      <h2>{{pessoa.nome}}</h2>
-      <p>{{pessoa.periodo}}</p>
+      <h2>{{pessoa}}</h2>
+      <p>M AC RC S PA</p>
+      <p></p>
+      <p>
+        <span item-right>
+          4,8
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+
+        </span>
+      </p>
     </ion-item>
   </ion-list>
-  <button ion-button full (click)="ListarVagas()">Candidatar todos a vaga</button>
+
 </ion-content>
+<ion-footer>
+  <ion-navbar>
+    <button ion-button full (click)="ListarVagas()">Candidatar todos a vaga</button>
+  </ion-navbar>
+</ion-footer>

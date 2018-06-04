@@ -1,0 +1,285 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>vaga</ion-title>
+
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <form>
+
+    <ion-list radio-group>
+
+      <ion-item-divider color="light">
+        
+        <span item-left>
+          <ion-icon name="walk"></ion-icon>
+        </span>
+        <h2>ATIVIDADE DISPONÍVEL</h2>
+      </ion-item-divider>
+
+      <ion-item>
+
+        <ion-label>Musculação</ion-label>
+
+        <ion-radio checked="true" value="musculacao"></ion-radio>
+
+      </ion-item>
+
+
+
+      <ion-item>
+
+        <ion-label>Aula Coletiva</ion-label>
+
+        <ion-radio value="coletiva"></ion-radio>
+
+      </ion-item>
+
+
+
+      <ion-item>
+
+        <ion-label>Running & Cardio</ion-label>
+
+        <ion-radio value="running"></ion-radio>
+
+      </ion-item>
+
+      <ion-item>
+
+        <ion-label>Spinning</ion-label>
+
+        <ion-radio value="spinning"></ion-radio>
+
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Parque Aquático</ion-label>
+        <ion-radio value="aquatico"></ion-radio>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-item item-right>
+      <ion-label>VALOR HORA AULA: R$</ion-label>
+      <ion-select>
+        <ion-option value="um">1,00</ion-option>
+        <ion-option value="dois">2,00</ion-option>
+        <ion-option value="tres">3,00</ion-option>
+        <ion-option value="quatro">4,00</ion-option>
+        <ion-option value="cinco">5,00</ion-option>
+        <ion-option value="seis">6,00</ion-option>
+        <ion-option value="sete">7,00</ion-option>
+        <ion-option value="oito">8,00</ion-option>
+        <ion-option value="nove">9,00</ion-option>
+        <ion-option value="dez">10,00</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item-divider color="light">
+      <span item-left>
+        <ion-icon name="calendar"></ion-icon>
+      </span>
+      <h2>PERÍODO NECESSÁRIO</h2>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Início: </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fim: </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+    </ion-item>
+
+
+    <ion-row radio-group>
+
+      <ion-item>
+
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Dom.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
+
+    </ion-row>
+
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Seg.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Ter.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Qua.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Qui.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Sex.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+    <ion-row radio-group>
+
+      <ion-item>
+
+          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+  
+            <ion-label range-left>Sáb.: 0h</ion-label>
+  
+            <ion-label range-right>24h</ion-label>
+            <ion-icon range-left small name="alarm"></ion-icon>
+  
+            <ion-icon range-right small name="alarm"></ion-icon>
+  
+          </ion-range>
+  
+        </ion-item>
+
+    </ion-row>
+
+
+
+
+    <ion-item-group>
+
+
+      <ion-item-divider color="light">
+          <span item-left>
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <h2>PERFIL DO CANDIDATO</h2>
+        </ion-item-divider>
+
+
+      <ion-item>
+        <ion-label>Período</ion-label>
+        <ion-select multiple="true">
+          <ion-option value="primeiro">1</ion-option>
+          <ion-option value="segundo">2</ion-option>
+          <ion-option value="terceiro">3</ion-option>
+          <ion-option value="quarto">4</ion-option>
+          <ion-option value="quinto">5</ion-option>
+          <ion-option value="sexto">6</ion-option>
+          <ion-option value="setimo">7</ion-option>
+          <ion-option value="oitavo">8</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Prev. Formatura: </ion-label>
+        <ion-datetime displayFormat="MM/YYYY"></ion-datetime>
+      </ion-item>
+
+      <ion-item-divider color="light">
+        <span item-right>
+          BOLSA-AUXÍLIO: R$ 3,00
+        </span>
+      </ion-item-divider>
+
+    </ion-item-group>
+
+    <ion-item-divider color="light">
+      INFORMAÇÕES GERAIS
+    </ion-item-divider>
+
+    <ion-label stacked>Obs:</ion-label>
+    <ion-input>name="obs"</ion-input>
+
+
+  </form>
+
+
+
+
+</ion-content>

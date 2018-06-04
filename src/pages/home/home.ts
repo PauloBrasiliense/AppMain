@@ -51,7 +51,7 @@ export class HomePage implements NavLifecycles {
   }
 
   Buscar() {
-    this.navCtrl.push(ListapessoasPage);
+  //  this.navCtrl.push(ListapessoasPage.name);
   }
 
 }
