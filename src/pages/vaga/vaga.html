@@ -15,8 +15,8 @@
 
     <ion-list radio-group>
 
-      <ion-item-divider color="light">
-        
+      <ion-item-divider color="primary">
+
         <span item-left>
           <ion-icon name="walk"></ion-icon>
         </span>
@@ -82,7 +82,7 @@
       </ion-select>
     </ion-item>
 
-    <ion-item-divider color="light">
+    <ion-item-divider color="primary">
       <span item-left>
         <ion-icon name="calendar"></ion-icon>
       </span>
@@ -123,123 +123,127 @@
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Seg.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hSeg" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Seg.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
     <ion-row radio-group>
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Ter.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hTer" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Ter.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
     <ion-row radio-group>
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Qua.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hQua" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Qua.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
     <ion-row radio-group>
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Qui.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hQui" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Qui.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
     <ion-row radio-group>
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Sex.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hSex" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Sex.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
     <ion-row radio-group>
 
       <ion-item>
 
-          <ion-range dualKnobs="true" pin="true" [(ngModel)]="knobValues" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
-  
-            <ion-label range-left>Sáb.: 0h</ion-label>
-  
-            <ion-label range-right>24h</ion-label>
-            <ion-icon range-left small name="alarm"></ion-icon>
-  
-            <ion-icon range-right small name="alarm"></ion-icon>
-  
-          </ion-range>
-  
-        </ion-item>
+        <ion-range dualKnobs="true" pin="true" [(ngModel)]="hSab" [ngModelOptions]="{standalone: true}" min="0" max="24" step="1">
+
+          <ion-label range-left>Sáb.: 0h</ion-label>
+
+          <ion-label range-right>24h</ion-label>
+          <ion-icon range-left small name="alarm"></ion-icon>
+
+          <ion-icon range-right small name="alarm"></ion-icon>
+
+        </ion-range>
+
+      </ion-item>
 
     </ion-row>
 
-
+    <ion-item-divider color="light">
+      <span item-right>
+        BOLSA-AUXÍLIO: R$ 3,00
+      </span>
+    </ion-item-divider>
 
 
     <ion-item-group>
 
 
-      <ion-item-divider color="light">
-          <span item-left>
-            <ion-icon name="person"></ion-icon>
-          </span>
-          <h2>PERFIL DO CANDIDATO</h2>
-        </ion-item-divider>
+      <ion-item-divider color="primary">
+        <span item-left>
+          <ion-icon name="person"></ion-icon>
+        </span>
+        <h2>PERFIL DO CANDIDATO</h2>
+      </ion-item-divider>
 
 
       <ion-item>
@@ -261,20 +265,12 @@
         <ion-datetime displayFormat="MM/YYYY"></ion-datetime>
       </ion-item>
 
-      <ion-item-divider color="light">
-        <span item-right>
-          BOLSA-AUXÍLIO: R$ 3,00
-        </span>
-      </ion-item-divider>
+      <ion-label stacked>Obs:</ion-label>
+      <ion-input>name="obs"</ion-input>
 
     </ion-item-group>
 
-    <ion-item-divider color="light">
-      INFORMAÇÕES GERAIS
-    </ion-item-divider>
 
-    <ion-label stacked>Obs:</ion-label>
-    <ion-input>name="obs"</ion-input>
 
 
   </form>
